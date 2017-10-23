@@ -58,7 +58,10 @@
         <p>Sign up and we'll let you know when we're ready.</p>
       </h2>
       <!-- START - Contact Form -->
-      <form id="contact-form" data-name="Contact Form" action="/thank-you" name="notifyMe" netlify>
+      <form id="contact-form" action="https://app.convertkit.com/landing_pages/284331/subscribe" data-remote="true" name="notifyMe">
+        <input type="hidden" value="{&quot;form_style&quot;:&quot;naked&quot;,&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;converted_behavior&quot;:&quot;show&quot;}" id="ck_form_options">
+        <input type="hidden" name="id" value="284331" id="landing_page_id">
+        <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
 
         <div class="row">
 
@@ -71,7 +74,8 @@
               </div>
             </div>
             <div class="form-group">
-              <input type="text" id="email" class="form form-control" placeholder="Enter your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click and type. No spam, we promise.'" name="email" data-name="Email">
+              <input type="email" name="email" class="form form-control" id="email" placeholder="Email Address" required>
+              <!-- <input type="text" id="email" class="form form-control" placeholder="Enter your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click and type. No spam, we promise.'" name="email" data-name="Email"> -->
             </div>
           </div>
 
